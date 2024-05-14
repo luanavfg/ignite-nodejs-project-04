@@ -21,8 +21,6 @@ let inMemoryAnswerAttachmentsRepository: InMemoryAnswerAttachmentsRepository;
 let inMemoryAnswersRepository: InMemoryAnswersRepository;
 let sendNotificationUseCase: SendNotificationUseCase;
 
-// let sendNotificationExecuteSpy: SpyInstance<>;
-
 let sendNotificationExecuteSpy: MockInstance<
   [SendNotificationUseCaseRequest],
   Promise<SendNotificationUseCaseResponse>
