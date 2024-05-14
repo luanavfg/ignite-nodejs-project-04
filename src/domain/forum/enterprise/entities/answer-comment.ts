@@ -15,6 +15,7 @@ export class AnswerComment extends Comment<AnswerCommentProps> {
     props: Optional<AnswerCommentProps, "createdAt">,
     id?: UniqueEntityID,
   ) {
+    // TODO: send notification when there is new comment
     const answerComment = new AnswerComment(
       {
         ...props,
